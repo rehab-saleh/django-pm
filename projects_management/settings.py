@@ -88,7 +88,7 @@ DATABASES = {
         'USER': 'dbclzolgreofbn',
         'PASSWORD': 'd31aacfc65dc111ba71f75b26f96a2a7d3fbcdb6620cab5c2cfacaf0af1b9e8d',
         'HOST': 'ec2-52-210-97-223.eu-west-1.compute.amazonaws.com',
-        'PORT': '5432 '
+        'PORT': '5432'
     }
 }
 
