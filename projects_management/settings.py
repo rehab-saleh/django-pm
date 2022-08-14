@@ -47,7 +47,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhitheNoiseMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -88,7 +88,7 @@ DATABASES = {
         'HOST': 'ec2-52-212-228-71.eu-west-1.compute.amazonaws.com',
         'USER': 'ecjynftklceljj',
         'PASSWORD': '04e262c0f7c172544e165cea37b89a8b40a1a55cff59b07c705ad10da13791c5',
-        'port': '5432'
+        'PORT': '5432'
     }
 }
 
