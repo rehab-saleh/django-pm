@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-5!5r-yg(fg+p1@e9=2^ynb^6f%!5vo-y%pptr4-)ey@=)126-p
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'django-re.herokuapp.com/', '127.0.0.1'
+    'django-81.herokuapp.com/', '127.0.0.1'
 ]
 
 
@@ -47,7 +47,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleware',
+    'whitenoise.middleware.WhitheNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -84,11 +84,11 @@ WSGI_APPLICATION = 'projects_management.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'd721r435ittabj',
-        'USER': 'dbclzolgreofbn',
-        'PASSWORD': 'd31aacfc65dc111ba71f75b26f96a2a7d3fbcdb6620cab5c2cfacaf0af1b9e8d',
-        'HOST': 'ec2-52-210-97-223.eu-west-1.compute.amazonaws.com',
-        'PORT': '5432'
+        'NAME': 'dbicc6ftunh6vi',
+        'HOST': 'ec2-52-212-228-71.eu-west-1.compute.amazonaws.com',
+        'USER': 'ecjynftklceljj',
+        'PASSWORD': '04e262c0f7c172544e165cea37b89a8b40a1a55cff59b07c705ad10da13791c5',
+        'port': '5432'
     }
 }
 
@@ -129,11 +129,13 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
