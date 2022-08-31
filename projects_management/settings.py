@@ -9,9 +9,11 @@ https://docs.djangoproject.com/en/4.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.0/ref/settings/
 """
+import os
+
 
 from pathlib import Path
-import os
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -26,7 +28,7 @@ SECRET_KEY = 'django-insecure-5!5r-yg(fg+p1@e9=2^ynb^6f%!5vo-y%pptr4-)ey@=)126-p
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    '127.0.0.1','jango-81.herokuapp.com'
+    'django-81.herokuapp.com/', '127.0.0.1'
 ]
 
 
@@ -84,10 +86,10 @@ WSGI_APPLICATION = 'projects_management.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'dbicc6ftunh6vi',
-        'HOST': 'ec2-52-212-228-71.eu-west-1.compute.amazonaws.com',
-        'USER': 'ecjynftklceljj',
-        'PASSWORD': '04e262c0f7c172544e165cea37b89a8b40a1a55cff59b07c705ad10da13791c5',
+        'NAME': 'd99g8g4lgirqem',
+        'HOST': 'ec2-52-19-188-149.eu-west-1.compute.amazonaws.com',
+        'USER': 'cceqjpfwxbxaxp',
+        'PASSWORD': '2662ea71bbee2a06d183e00552109db9ce029b2353e962859a4110bfcc96ce05',
         'PORT': '5432'
     }
 }
@@ -127,10 +129,13 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
-
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [ os.path.join(BASE_DIR, 'static')]
+
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+
+
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 # Default primary key field type
