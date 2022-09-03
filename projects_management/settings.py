@@ -85,7 +85,7 @@ WSGI_APPLICATION = 'projects_management.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'd6qjt4pcdjg9fr',
         'HOST': 'ec2-54-204-241-136.compute-1.amazonaws.com',
         'USER': 'zmgjkgfntsoqxq',
