@@ -85,7 +85,7 @@ WSGI_APPLICATION = 'projects_management.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'd6qjt4pcdjg9fr',
         'HOST': 'ec2-54-204-241-136.compute-1.amazonaws.com',
         'USER': 'zmgjkgfntsoqxq',
@@ -152,5 +152,3 @@ LOGOUT_REDIRECT_URL = '/accounts/login'
 INTERNAL_IPS = [
     "127.0.0.1"
 ]
-
-DISABLE_COLLECTSTATIC=1
