@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-5!5r-yg(fg+p1@e9=2^ynb^6f%!5vo-y%pptr4-)ey@=)126-p
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'django-81.herokuapp.com/', '127.0.0.1'
+    'sleepy-forest-69571.herokuapp.com', '127.0.0.1'
 ]
 
 
@@ -86,10 +86,10 @@ WSGI_APPLICATION = 'projects_management.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'd99g8g4lgirqem',
-        'HOST': 'ec2-52-19-188-149.eu-west-1.compute.amazonaws.com',
-        'USER': 'cceqjpfwxbxaxp',
-        'PASSWORD': '2662ea71bbee2a06d183e00552109db9ce029b2353e962859a4110bfcc96ce05',
+        'NAME': 'd6qjt4pcdjg9fr',
+        'HOST': 'ec2-54-204-241-136.compute-1.amazonaws.com',
+        'USER': 'zmgjkgfntsoqxq',
+        'PASSWORD': 'aedf481cf37c19f3171e3b9c7f41fd18218972de440d4aaca09e7e8d67c0efcb',
         'PORT': '5432'
     }
 }
